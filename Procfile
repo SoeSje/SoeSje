@@ -1,1 +1,1 @@
-eyzalts : node SoeSje_BOT.js
+eyzalts: node SoeSje_BOT.js
