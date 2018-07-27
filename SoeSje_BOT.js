@@ -18,8 +18,21 @@ bot.on("message", function(message) {
     }
 
     if (lowmessage == "ik ben mooi") {
-        message.channel.sendMessage ("Dit noem jij mooi? :joy:");
-        message.reply(message.author.avatarURL);
+
+       var random = Math.floor((Math.random() * 2) + 1);
+
+        if (random == 1) {
+          message.channel.send ("Dit noem jij mooi? :joy:", message.author.avatarURL);   
+        }
+
+        
+
+        if (random == 2) {
+            message.channel.sendMessage ("Me neefje is nog mooier! :joy:", {files: ["./images.lelijke_baby"]});   
+          }
+
+  
+
     }
 
 });
