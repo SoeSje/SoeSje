@@ -10,6 +10,9 @@ bot.on("ready", function() {
 });
 
 bot.on("message", function(message) {
+
+    var lowmessage = message.content.toLowerCase();
+
     if (message.content == "banaan") {
         message.channel.sendMessage (":banana:");
     }
