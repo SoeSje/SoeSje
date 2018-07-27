@@ -17,22 +17,12 @@ bot.on("message", function(message) {
         message.channel.sendMessage (":banana:");
     }
 
+    if (lowmessage == ":dab:") {
+        message.channel.sendMessage (":dab:");
+    }
+
     if (lowmessage == "ik ben mooi") {
-
-       var random = Math.floor((Math.random() * 2) + 1);
-
-        if (random == 1) {
-          message.channel.send ("Dit noem jij mooi? :joy:", message.author.avatarURL);   
-        }
-
-        
-
-        if (random == 2) {
-            message.channel.sendMessage ("Me neefje is nog mooier! :joy:", {files: ["./images.lelijke_baby"]});   
-          }
-
-  
-
+        message.channel.send ("Me neefje is nog mooier! :joy:", {files: ["./images/lelijke_baby.jpg"]});   
     }
 
 });
