@@ -13,11 +13,11 @@ bot.on("message", function(message) {
 
     var lowmessage = message.content.toLowerCase();
 
-    if (message.content == "banaan") {
+    if (lowmessage == "banaan") {
         message.channel.sendMessage (":banana:");
     }
 
-    if (message.content == "ik ben mooi") {
+    if (lowmessage == "ik ben mooi") {
         message.channel.sendMessage ("Dit noem jij mooi? :joy:");
         message.reply(message.author.avatarURL);
     }
