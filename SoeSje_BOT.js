@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 
-const TOKEN = ("NDcxOTczODEzODkwOTczNjk3.DjusMw.Or7tU1v6GR7lXCzmHC6HIIC_JS4")
+const TOKEN = (COOKIE)
 
 var bot = new Discord.Client();
 
